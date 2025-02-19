@@ -92,4 +92,4 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 Any unauthorized reproduction, copying, distribution, or derivation of any part of this repository is strictly prohibited. This work is protected under Indonesian Copyright Law (Law No. 28 of 2014). Violators will face legal action to the fullest extent permitted by law.
 
-For licensing inquiries or permissions, please contact us at [Insert Contact Email].
+For licensing inquiries or permissions, please contact us at [razza.titian0403@mail.ugm.ac.id].
