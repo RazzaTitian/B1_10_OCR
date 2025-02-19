@@ -1,21 +1,21 @@
 # ClearScan
 
-ClearScan is an innovative web and mobile application designed to empower individuals with partial vision impairment by converting scanned text into natural-sounding speech—both online and offline. Built to support the Indonesian language with high accuracy, ClearScan addresses the everyday challenges faced by those who struggle to read standard texts on product packaging, documents, and signage.
+ClearScan is an innovative web and mobile application designed to empower individuals with partial vision impairment by converting scanned text into natural-sounding speech—both online and offline. Built to support the Indonesian language with high accuracy, ClearScan addresses everyday challenges such as reading product packaging, documents, and public signage.
 
 ---
 
 ## Background
 
-In Indonesia, approximately 3.7 million people experience visual impairments, with many suffering from partial blindness that hinders their ability to read. While applications like Google Lookout and Seeing AI offer OCR (Optical Character Recognition) and TTS (Text-to-Speech) functionalities, they are not fully optimized for the Indonesian language and often require a stable internet connection. ClearScan fills this gap by providing a dedicated solution for accurate, offline-friendly text scanning and reading.
+In Indonesia, approximately 3.7 million people experience visual impairments, with many suffering from partial blindness that hinders their ability to read. While solutions like Google Lookout and Seeing AI offer OCR (Optical Character Recognition) and TTS (Text-to-Speech) functionalities, they are not fully optimized for the Indonesian language and often require a stable internet connection. ClearScan fills this gap by providing a dedicated, accessible solution.
 
 ---
 
 ## Problem Statement
 
 - **Empowerment:** How can we help individuals with partial vision impairment read text more easily and independently?
-- **Accuracy:** How can we improve OCR and TTS accuracy specifically for Indonesian text, including local nuances and accents?
-- **Accessibility:** How can we create a lightweight, user-friendly solution that functions seamlessly both online and offline?
-- **Cost-Effectiveness:** How can we ensure that our solution is more effective and affordable compared to existing alternatives?
+- **Accuracy:** How can we improve OCR and TTS performance specifically for Indonesian text, capturing local nuances and accents?
+- **Accessibility:** How can we create a lightweight, user-friendly solution that works seamlessly both online and offline?
+- **Cost-Effectiveness:** How can we ensure our solution is more effective and affordable than existing alternatives?
 
 ---
 
@@ -35,7 +35,7 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 - **History Storage:** Automatically saves scanned texts for easy future reference.
 - **Customizable Display:** Offers adjustable contrast and text size to enhance readability.
 - **Language-Specific Recognition:** Uses AI to accurately interpret the nuances of Indonesian, including regional accents.
-- **Image-Based Scanning:** Supports text extraction from a variety of image types in different settings.
+- **Image-Based Scanning:** Supports text extraction from various image types in different settings.
 
 ---
 
@@ -50,7 +50,7 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 ### Seeing AI
 - **Type:** Direct Competitor  
 - **Overview:** A mobile app integrating OCR, TTS, object recognition, and environmental description.
-- **Strengths:** Comprehensive accessibility features and backed by Microsoft.
+- **Strengths:** Comprehensive accessibility features backed by Microsoft.
 - **Weaknesses:** Limited optimization for Indonesian language nuances and dependent on a stable internet connection for advanced features.
 
 ### Google Lookout
@@ -78,11 +78,16 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 ## Team
 
-**Kelompok B10:**
-- **Ketua Kelompok (Team Leader):** Muhammad Razza Titian Jiwani - 21/475348/TK/52470
-- **Anggota 1:** Muhammad Razza Titian Jiwani - 21/475348/TK/52470
-- **Anggota 2:** Yefta Nathaniel Wibowo - 22/492878/TK/53954
-- **Anggota 3:** Reihan Athar Zildaniar - 22/497191/TK/54482
+**Kelompok B1_10:**
+
+- **Muhammad Razza Titian J.** (21/475348/TK/52470)  
+  *Project Manager (PM)*
+
+- **Yefta Nathaniel Wibowo** (22/492878/TK/53954)  
+  *AI Engineer (AIE), Cloud Engineer (CE)*
+
+- **Reihan Athar Zildaniar** (22/497191/TK/54482)  
+  *UI/UX Designer (UXD), Software Engineer (SE)*
 
 ---
 
@@ -90,6 +95,12 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 © [2025] Kelompok B10. All rights reserved.
 
-Any unauthorized reproduction, copying, distribution, or derivation of any part of this repository is strictly prohibited. This work is protected under Indonesian Copyright Law (Law No. 28 of 2014). Violators will face legal action to the fullest extent permitted by law.
+The contents of this repository, including all source code, documentation, and associated materials (hereinafter referred to as "the Project"), are protected under Indonesian Copyright Law (Law No. 28 of 2014) as well as any applicable international intellectual property laws.
 
-For licensing inquiries or permissions, please contact us at [razza.titian0403@mail.ugm.ac.id].
+Any unauthorized reproduction, modification, distribution, transmission, or creation of derivative works, in whole or in part, of this Project is strictly prohibited. Only individuals explicitly invited as Authorized Collaborators, or those who have been formally recognized in official documentation as having access rights, are permitted to modify, update, or distribute any part of this Project.
+
+Any attempt to bypass or alter these restrictions, including but not limited to copying, reverse engineering, decompilation, or any other form of unauthorized exploitation, will be subject to immediate legal action to the fullest extent permitted by law. Unauthorized actions will result in both civil and criminal liabilities, and Kelompok B10 reserves the right to seek all available remedies, including injunctions, monetary damages, and legal fees.
+
+Access to, and use of, this repository constitutes your agreement to be bound by the terms of this Legal Notice. If you do not agree with any part of these terms, you are hereby prohibited from accessing or using any materials contained herein.
+
+For any questions regarding these terms, licensing issues, or to request permission for modifications, please contact us directly at [razza.titian0403@mail.ugm.ac.id].
