@@ -93,13 +93,13 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 ## Legal Notice
 
-© [2025] Kelompok B10. All rights reserved.
+© [2025] Kelompok B1_10. All rights reserved.
 
 The contents of this repository, including all source code, documentation, and associated materials (hereinafter referred to as "the Project"), are protected under Indonesian Copyright Law (Law No. 28 of 2014) as well as any applicable international intellectual property laws.
 
 Any unauthorized reproduction, modification, distribution, transmission, or creation of derivative works, in whole or in part, of this Project is strictly prohibited. Only individuals explicitly invited as Authorized Collaborators, or those who have been formally recognized in official documentation as having access rights, are permitted to modify, update, or distribute any part of this Project.
 
-Any attempt to bypass or alter these restrictions, including but not limited to copying, reverse engineering, decompilation, or any other form of unauthorized exploitation, will be subject to immediate legal action to the fullest extent permitted by law. Unauthorized actions will result in both civil and criminal liabilities, and Kelompok B10 reserves the right to seek all available remedies, including injunctions, monetary damages, and legal fees.
+Any attempt to bypass or alter these restrictions, including but not limited to copying, reverse engineering, decompilation, or any other form of unauthorized exploitation, will be subject to immediate legal action to the fullest extent permitted by law. Unauthorized actions will result in both civil and criminal liabilities, and Kelompok B1_10 reserves the right to seek all available remedies, including injunctions, monetary damages, and legal fees.
 
 Access to, and use of, this repository constitutes your agreement to be bound by the terms of this Legal Notice. If you do not agree with any part of these terms, you are hereby prohibited from accessing or using any materials contained herein.
 
