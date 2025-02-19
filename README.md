@@ -88,7 +88,7 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 ## Legal Notice
 
-© [Year] Kelompok B10. All rights reserved.
+© [2025] Kelompok B10. All rights reserved.
 
 Any unauthorized reproduction, copying, distribution, or derivation of any part of this repository is strictly prohibited. This work is protected under Indonesian Copyright Law (Law No. 28 of 2014). Violators will face legal action to the fullest extent permitted by law.
 
