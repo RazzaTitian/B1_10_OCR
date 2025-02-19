@@ -1,3 +1,3 @@
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@v4.25.0"
 title: ClearScan
 description: OCR for the people who needs it
