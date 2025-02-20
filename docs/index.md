@@ -107,10 +107,10 @@ The proposed solution is to develop a web application that leverages OCR technol
 
 
 ### **Entity relationship diagram**
-<img src="./public/e_ERD.png">
+<img src="./public/e_ERD.jpg">
 
 ### **Low-fidelity Wireframe**
-<img src="./public/e_LoFi.png">
+<img src="./public/e_LoFi.jpg">
 
 ### **Gantt-Chart pengerjaan proyek dalam kurun waktu 1 semester**
-<img src="./public/e_GanttChart.png">
+<img src="./public/e_GanttChart.jpg">
