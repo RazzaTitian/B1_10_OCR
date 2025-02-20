@@ -104,3 +104,13 @@ The proposed solution is to develop a web application that leverages OCR technol
 **Department:** Department of Electrical Engineering and Information Technology  
 **Faculty:** Faculty of Engineering  
 **Institution:** Universitas Gadjah Mada
+
+
+### **Entity relationship diagram**
+<img src="./public/e_ERD.png">
+
+### **Low-fidelity Wireframe**
+<img src="./public/e_LoFi.png">
+
+### **Gantt-Chart pengerjaan proyek dalam kurun waktu 1 semester**
+<img src="./public/e_GanttChart.png">
