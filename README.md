@@ -131,18 +131,34 @@ Effortlessly deploy ClearScan via [Vercel Platform](https://vercel.com/new?utm_m
 
 ---
 
-## Legal Notice
+⚖️ Legal Notice
+© 2025 Kelompok B1_10 (Authored by Muhammad Razza Titian Jiwani). All Rights Reserved.
 
-© 2025 Kelompok B1_10. All rights reserved.
+Effective Date and Time of Creation: 22/03/2025, at exactly 14:05:50 (GMT+7, Western Indonesian Time).
 
-This repository—including all source code, software documentation, designs, written content, branding materials, and associated digital assets (collectively referred to herein as "the Project")—is fully protected under Indonesian Copyright Law (Law No. 28 of 2014), International Copyright Treaties, and applicable Intellectual Property laws.
+This repository—including all source code, software documentation, designs, written content, branding materials, algorithms, methodologies, user interfaces, digital assets, and all other intellectual and creative components (collectively referred to as the "Work" or "Project")—is protected by Indonesian Copyright Law (Law No. 28 of 2014), International Copyright Treaties, and applicable Intellectual Property laws.
 
-**Any unauthorized reproduction, alteration, distribution, transmission, creation of derivative works, reverse engineering, decompilation, disassembly, or exploitation—whether in whole or in part—is expressly prohibited.** Only explicitly designated Authorized Collaborators, or individuals whose access rights are officially documented by Kelompok B1_10, may modify, update, distribute, or otherwise interact with this Project.
+1. Ownership and Rights
+All rights, titles, and interests (including but not limited to copyright, moral rights, trademarks, patents, trade secrets, and any other intellectual property rights) within this Work are exclusively owned by Kelompok B1_10 and the Author, Muhammad Razza Titian Jiwani.
 
-Violations of these terms will immediately initiate appropriate legal actions, including but not limited to injunctions, substantial monetary damages, and full recovery of attorney fees and litigation expenses. Kelompok B1_10 expressly reserves all rights, remedies, and actions available by law.
+2. Restrictions and Prohibitions
+Unauthorized reproduction, modification, distribution, transmission, sublicensing, sale, leasing, loaning, creation of derivative works, reverse-engineering, disassembling, or exploitation—whether partially or fully, digitally or physically—is strictly prohibited without prior explicit written consent from Kelompok B1_10 and the Author.
 
-Your access and continued use of this repository or associated resources signify binding agreement to this Legal Notice in its entirety. If you disagree with any clause herein, you must cease use immediately.
+3. Attribution
+Any authorized derivative or adapted works must prominently credit Kelompok B1_10 and the original Author, Muhammad Razza Titian Jiwani. Moral rights of attribution and integrity are expressly asserted and reserved.
 
-For questions, license inquiries, or explicit permission requests regarding this project, contact the Project Manager at [razza.titian0403@mail.ugm.ac.id].
+4. Legal Enforcement
+Kelompok B1_10 proactively enforces intellectual property protections. Any detected infringement or unauthorized usage shall invoke immediate legal action, entitling the Rights Holders to pursue injunctions, damages, and full compensation for legal and litigation expenses.
+
+5. Warranty and Liability Disclaimer
+THE PROJECT IS PROVIDED “AS IS,” WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED. KELOMPOK B1_10 DISCLAIMS ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. USERS ASSUME ALL RISKS ASSOCIATED WITH USE, AND KELOMPOK B1_10 WILL NOT BE LIABLE FOR ANY DAMAGES OR LOSSES ARISING FROM OR RELATED TO THE USE OR MISUSE OF THE PROJECT.
+
+6. Governing Law and Jurisdiction
+This Legal Notice shall be governed exclusively by the laws of the Republic of Indonesia. Any disputes arising out of or relating to this Notice shall be resolved solely by competent courts within Indonesia.
+
+7. Binding Agreement
+By accessing or using this repository and associated resources, you expressly agree to all terms stated herein. If you disagree with any provision, you must immediately cease access and use.
+
+For explicit permissions, inquiries, or licensing arrangements, contact the Project Manager directly at [razza.titian0403@mail.ugm.ac.id].
 
 ---
