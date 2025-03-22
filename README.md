@@ -1,7 +1,3 @@
-Here's the professionally combined and revised README document with an airtight, legally meticulous copyright notice:  
-
----
-
 # ClearScan
 
 ClearScan is an innovative web and mobile application designed to empower individuals with partial vision impairment by converting scanned text into natural-sounding speech—both online and offline. Built specifically for high accuracy in the Indonesian language, ClearScan addresses everyday challenges such as reading product packaging, documents, and public signage.
