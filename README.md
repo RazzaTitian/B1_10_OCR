@@ -1,9 +1,18 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here's the professionally combined and revised README document with an airtight, legally meticulous copyright notice:  
 
-## Getting Started
+---
 
-First, run the development server:
+# ClearScan
+
+ClearScan is an innovative web and mobile application designed to empower individuals with partial vision impairment by converting scanned text into natural-sounding speech—both online and offline. Built specifically for high accuracy in the Indonesian language, ClearScan addresses everyday challenges such as reading product packaging, documents, and public signage.
+
+---
+
+## Getting Started with Development
+
+This project utilizes [Next.js](https://nextjs.org/) and was initialized using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+To start the development server, execute:
 
 ```bash
 npm run dev
@@ -15,65 +24,49 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to [http://localhost:3000](http://localhost:3000) in your browser to preview the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Edit `app/page.js` to make changes, and observe auto-updates instantly upon saving the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# ClearScan
-
-ClearScan is an innovative web and mobile application designed to empower individuals with partial vision impairment by converting scanned text into natural-sounding speech—both online and offline. Built to support the Indonesian language with high accuracy, ClearScan addresses everyday challenges such as reading product packaging, documents, and public signage.
+ClearScan also leverages [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) for optimized and efficient loading of the Inter font from Google Fonts.
 
 ---
 
 ## Background
 
-In Indonesia, approximately 3.7 million people experience visual impairments, with many suffering from partial blindness that hinders their ability to read. While solutions like Google Lookout and Seeing AI offer OCR (Optical Character Recognition) and TTS (Text-to-Speech) functionalities, they are not fully optimized for the Indonesian language and often require a stable internet connection. ClearScan fills this gap by providing a dedicated, accessible solution.
+In Indonesia, approximately 3.7 million individuals experience vision impairments, significantly impacting their daily reading ability. Current solutions like Google Lookout and Seeing AI offer Optical Character Recognition (OCR) and Text-to-Speech (TTS) features but are inadequately optimized for the Indonesian language, often requiring stable internet connectivity. ClearScan directly addresses these limitations, providing a specialized, accessible solution tailored specifically for Indonesian users.
 
 ---
 
 ## Problem Statement
 
-- **Empowerment:** How can we help individuals with partial vision impairment read text more easily and independently?
-- **Accuracy:** How can we improve OCR and TTS performance specifically for Indonesian text, capturing local nuances and accents?
-- **Accessibility:** How can we create a lightweight, user-friendly solution that works seamlessly both online and offline?
-- **Cost-Effectiveness:** How can we ensure our solution is more effective and affordable than existing alternatives?
+ClearScan aims to solve these critical issues:
+
+- **Empowerment:** Enable independent, comfortable reading for individuals with partial visual impairment.
+- **Accuracy:** Improve OCR and TTS specifically for nuanced Indonesian linguistic and accent diversity.
+- **Accessibility:** Offer seamless online and offline functionalities within a lightweight and user-friendly platform.
+- **Cost-effectiveness:** Deliver a superior, affordable alternative to current solutions.
 
 ---
 
 ## Proposed Solution
 
-ClearScan leverages advanced OCR technology to convert text from images or documents into digital text, which is then transformed into speech via a high-quality TTS engine. The application is purposefully engineered to:
-- Recognize and accurately process Indonesian text.
-- Offer offline functionality for consistent performance.
-- Provide user-friendly features that enhance accessibility for individuals with partial vision impairment.
+ClearScan employs advanced OCR technology to convert images and documents into digital text, which is then transformed into speech through a sophisticated TTS engine. The application is specifically designed to:
+
+- Accurately recognize Indonesian text.
+- Provide consistent offline functionality.
+- Incorporate accessible and intuitive features designed specifically for users with partial vision impairment.
 
 ---
 
 ## Key Features
 
-- **Text Scanning (OCR):** Quickly converts text from images or documents, optimized for the Indonesian language.
-- **Text-to-Speech (TTS):** Reads scanned text aloud in a natural voice with adjustable speed; fully functional offline.
-- **History Storage:** Automatically saves scanned texts for easy future reference.
-- **Customizable Display:** Offers adjustable contrast and text size to enhance readability.
-- **Language-Specific Recognition:** Uses AI to accurately interpret the nuances of Indonesian, including regional accents.
-- **Image-Based Scanning:** Supports text extraction from various image types in different settings.
+- **Advanced OCR:** High-speed Indonesian text extraction from images or documents.
+- **Offline TTS:** Natural-sounding speech synthesis with offline compatibility and adjustable playback speed.
+- **Scan History:** Automatic saving of scanned texts for future reference.
+- **Accessibility Controls:** Customizable contrast and adjustable font sizes for improved readability.
+- **Language Nuance Recognition:** Specialized AI capabilities to accurately interpret local Indonesian dialects and regional accents.
+- **Versatile Scanning:** Robust text recognition from diverse image sources and real-world scenarios.
 
 ---
 
@@ -81,36 +74,35 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 ### ChatGPT
 - **Type:** Indirect Competitor  
-- **Overview:** An advanced AI language model capable of processing text input via camera.
-- **Strengths:** Effective text explanation and multi-language support.
-- **Weaknesses:** Not designed specifically for users with visual impairments and lacks tailored visual support.
+- **Overview:** AI-powered conversational model capable of processing and generating text responses.
+- **Strengths:** Advanced explanation capabilities; multilingual support.
+- **Weaknesses:** Not specialized for visual impairment; lacks visual accessibility features.
 
-### Seeing AI
+### Seeing AI (Microsoft)
 - **Type:** Direct Competitor  
-- **Overview:** A mobile app integrating OCR, TTS, object recognition, and environmental description.
-- **Strengths:** Comprehensive accessibility features backed by Microsoft.
-- **Weaknesses:** Limited optimization for Indonesian language nuances and dependent on a stable internet connection for advanced features.
+- **Overview:** Mobile app integrating OCR, TTS, and object recognition features.
+- **Strengths:** Comprehensive suite of accessibility tools; backed by Microsoft.
+- **Weaknesses:** Limited Indonesian language support; internet-dependent advanced functionalities.
 
 ### Google Lookout
 - **Type:** Direct Competitor  
-- **Overview:** A mobile application that utilizes AI/ML for text and object recognition.
-- **Strengths:** High accuracy and seamless integration with Android devices.
-- **Weaknesses:** Mainly available for Android and requires robust internet connectivity for certain functionalities.
+- **Overview:** Android application utilizing AI for object and text recognition.
+- **Strengths:** Effective integration with Android OS; high accuracy.
+- **Weaknesses:** Primarily Android-exclusive; partial reliance on internet connectivity for advanced functionalities.
 
 ---
 
-## References
+## Learn More About Next.js
 
-- **World Health Organization (WHO).** (2023). *Blindness and Vision Impairment.* Retrieved from [WHO Website](https://www.who.int)
-- **Kementerian Kesehatan Republik Indonesia.** (2022). *Prevalensi Gangguan Penglihatan di Indonesia.* Retrieved from [Kemenkes](https://www.kemkes.go.id)
-- **Google Lookout.** Retrieved from [Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.reveal)
-- **Seeing AI - Microsoft.** Retrieved from [Microsoft Website](https://www.microsoft.com/en-us/ai/seeing-ai)
-- **Smith, R., Antonova, D., & Lee, S.** (2009). *Google's Tesseract Optical Character Recognition Engine.*
-- **Huang, X., Baker, J., & Reddy, R.** (2014). *A Historical Perspective of Speech Recognition.* Communications of the ACM, 57(1), 94-103.
-- **Goodfellow, I., Bengio, Y., & Courville, A.** (2016). *Deep Learning.* MIT Press.
-- **Huang, J., & Wang, Y.** (2021). *Text-to-Speech Synthesis with Neural Networks.* Journal of Artificial Intelligence Research, 64, 123-145.
-- **Azure Cognitive Services.** Retrieved from [Azure TTS](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/)
-- **Tesseract OCR.** Retrieved from [GitHub Repository](https://github.com/tesseract-ocr/tesseract)
+- [Next.js Documentation](https://nextjs.org/docs): Explore comprehensive Next.js features and APIs.
+- [Interactive Tutorial](https://nextjs.org/learn): Engage with interactive lessons on Next.js.
+- [GitHub Repository](https://github.com/vercel/next.js/): Contribute to the Next.js project and provide your valuable feedback.
+
+---
+
+## Deployment
+
+Effortlessly deploy ClearScan via [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). For deployment guidance, refer to the official [Next.js Deployment Documentation](https://nextjs.org/docs/deployment).
 
 ---
 
@@ -129,17 +121,32 @@ ClearScan leverages advanced OCR technology to convert text from images or docum
 
 ---
 
+## References
+
+- **World Health Organization (WHO).** (2023). [Blindness and Vision Impairment](https://www.who.int).
+- **Kementerian Kesehatan RI.** (2022). [Prevalensi Gangguan Penglihatan di Indonesia](https://www.kemkes.go.id).
+- **Google Lookout.** [Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.reveal).
+- **Seeing AI.** [Microsoft Website](https://www.microsoft.com/en-us/ai/seeing-ai).
+- **Smith, R., Antonova, D., & Lee, S.** (2009). *Google's Tesseract OCR Engine*.
+- **Huang, X., Baker, J., & Reddy, R.** (2014). *Historical Perspective on Speech Recognition*. Communications of ACM, 57(1), 94-103.
+- **Goodfellow, I., Bengio, Y., & Courville, A.** (2016). *Deep Learning*. MIT Press.
+- **Azure Cognitive Services TTS.** [Azure Website](https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/).
+- **Tesseract OCR.** [GitHub Repository](https://github.com/tesseract-ocr/tesseract).
+
+---
+
 ## Legal Notice
 
-© [2025] Kelompok B1_10. All rights reserved.
+© 2025 Kelompok B1_10. All rights reserved.
 
-The contents of this repository, including all source code, documentation, and associated materials (hereinafter referred to as "the Project"), are protected under Indonesian Copyright Law (Law No. 28 of 2014) as well as any applicable international intellectual property laws.
+This repository—including all source code, software documentation, designs, written content, branding materials, and associated digital assets (collectively referred to herein as "the Project")—is fully protected under Indonesian Copyright Law (Law No. 28 of 2014), International Copyright Treaties, and applicable Intellectual Property laws.
 
-Any unauthorized reproduction, modification, distribution, transmission, or creation of derivative works, in whole or in part, of this Project is strictly prohibited. Only individuals explicitly invited as Authorized Collaborators, or those who have been formally recognized in official documentation as having access rights, are permitted to modify, update, or distribute any part of this Project.
+**Any unauthorized reproduction, alteration, distribution, transmission, creation of derivative works, reverse engineering, decompilation, disassembly, or exploitation—whether in whole or in part—is expressly prohibited.** Only explicitly designated Authorized Collaborators, or individuals whose access rights are officially documented by Kelompok B1_10, may modify, update, distribute, or otherwise interact with this Project.
 
-Any attempt to bypass or alter these restrictions, including but not limited to copying, reverse engineering, decompilation, or any other form of unauthorized exploitation, will be subject to immediate legal action to the fullest extent permitted by law. Unauthorized actions will result in both civil and criminal liabilities, and Kelompok B1_10 reserves the right to seek all available remedies, including injunctions, monetary damages, and legal fees.
+Violations of these terms will immediately initiate appropriate legal actions, including but not limited to injunctions, substantial monetary damages, and full recovery of attorney fees and litigation expenses. Kelompok B1_10 expressly reserves all rights, remedies, and actions available by law.
 
-Access to, and use of, this repository constitutes your agreement to be bound by the terms of this Legal Notice. If you do not agree with any part of these terms, you are hereby prohibited from accessing or using any materials contained herein.
+Your access and continued use of this repository or associated resources signify binding agreement to this Legal Notice in its entirety. If you disagree with any clause herein, you must cease use immediately.
 
-For any questions regarding these terms, licensing issues, or to request permission for modifications, please contact us directly at [razza.titian0403@mail.ugm.ac.id].
->>>>>>> d168331a15238a054254118df3663fd7e4ed6396
+For questions, license inquiries, or explicit permission requests regarding this project, contact the Project Manager at [razza.titian0403@mail.ugm.ac.id].
+
+---
