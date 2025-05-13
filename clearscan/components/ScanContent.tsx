@@ -10,11 +10,10 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
   const [audioUrl, setAudioUrl] = useState<string>('');
   const [error, setError] = useState<string>('');
 
-  const OCR_ENDPOINT = 'https://ocr-b1-10.cognitiveservices.azure.com/';
-  const OCR_KEY = 'B0boaBIxUVoiG98EOSreX1ipXZK6gP8HPHBHlGDOFVTzeRXpPW2gJQQJ99BEACGhslBXJ3w3AAAFACOGhsZb';
-
-  const TTS_ENDPOINT = 'https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1';
-  const TTS_KEY = '30yiwr7RGInDIcklNpModrtdf1bY4hFFMQzwk4ZGClL27Vd5ZPKrJQQJ99BEACGhslBXJ3w3AAAYACOGiqx8';
+  const OCR_ENDPOINT = process.env.NEXT_PUBLIC_OCR_ENDPOINT;
+  const OCR_KEY = process.env.NEXT_PUBLIC_OCR_KEY;
+  const TTS_ENDPOINT = process.env.NEXT_PUBLIC_TTS_ENDPOINT;
+  const TTS_KEY = process.env.NEXT_PUBLIC_TTS_KEY;
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -33,10 +32,12 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
     // OCR request
     const ocrResponse = await fetch(OCR_ENDPOINT + 'vision/v3.2/read/analyze', {
       method: 'POST',
-      headers: {
-        'Ocp-Apim-Subscription-Key': OCR_KEY,
-        'Content-Type': 'application/octet-stream',
-      },
+      headers: OCR_KEY
+        ? {
+            'Ocp-Apim-Subscription-Key': OCR_KEY,
+            'Content-Type': 'application/octet-stream',
+          }
+        : {},
       body: image,
     });
 
@@ -55,7 +56,11 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
     let ocrResult;
     do {
       ocrResult = await fetch(`${OCR_ENDPOINT}vision/v3.2/read/analyzeResults/${operationId}`, {
-        headers: { 'Ocp-Apim-Subscription-Key': OCR_KEY },
+        headers: OCR_KEY
+        ? {
+            'Ocp-Apim-Subscription-Key': OCR_KEY
+          }
+        : {},
       });
       ocrResult = await ocrResult.json();
     } while (ocrResult.status === 'running' || ocrResult.status === 'notStarted');
@@ -70,19 +75,22 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
 
     // TTS request
     const ttsBody = `
-      <speak version='1.0' xml:lang='en-US'>
-        <voice xml:lang='en-US' xml:gender='Female' name='en-US-JennyNeural'>
+      <speak version='1.0' xml:lang='id-ID'>
+        <voice xml:lang='id-ID' xml:gender='Male' name='id-ID-ArdiNeural'>
           ${extractedText}
         </voice>
       </speak>`;
 
+    if (!TTS_ENDPOINT) {
+      throw new Error('TTS endpoint is not defined');
+    }
     const ttsResponse = await fetch(TTS_ENDPOINT, {  // Path yang benar untuk TTS
       method: 'POST',
-      headers: {
-        'Ocp-Apim-Subscription-Key': TTS_KEY,
+      headers: new Headers({
+        'Ocp-Apim-Subscription-Key': TTS_KEY || '',
         'Content-Type': 'application/ssml+xml',
         'X-Microsoft-OutputFormat': 'audio-16khz-32kbitrate-mono-mp3',
-      },
+      }),
       body: ttsBody,
     });
 
