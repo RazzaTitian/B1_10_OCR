@@ -1,16 +1,24 @@
 'use client';
 import React from 'react';
+
 export interface HistoryItem { id: string; title: string }
+
 interface SidebarProps {
   histories: HistoryItem[];
   selectedId: string;
   onSelect: (id: string) => void;
+  isOpen: boolean;
+  onToggle: () => void;
 }
-export default function Sidebar({ histories, selectedId, onSelect }: SidebarProps) {
+
+export default function Sidebar({ histories, selectedId, onSelect, isOpen, onToggle }: SidebarProps) {
   return (
-    <nav className="w-64 bg-[rgba(83,0,255,0.5)] shadow-md flex flex-col">
-      <div className="p-6 border-b">
+    <nav className={`w-64 bg-[rgba(83,0,255,0.5)] shadow-md flex flex-col ${isOpen ? '' : 'hidden md:flex'}`}>
+      <div className="p-6 border-b flex justify-between items-center">
         <h2 className="text-xl font-bold text-black">Scan Histories</h2>
+        <button onClick={onToggle} className="text-black hover:text-gray-700 md:hidden">
+          {isOpen ? 'Close' : 'Open'}
+        </button>
       </div>
       <ul className="flex-1 overflow-auto">
         {histories.map(h => (
