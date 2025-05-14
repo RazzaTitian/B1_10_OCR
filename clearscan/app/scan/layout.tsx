@@ -21,7 +21,6 @@ export default function ScanLayout({ children }: { children: ReactNode }) {
   return (
     <SelectedContext.Provider value={{ selectedId, setSelectedId }}>
       <div className="h-screen flex bg-gray-50">
-        {/* Only one Sidebar, wired up correctly */}
         <Sidebar
           histories={histories}
           selectedId={selectedId}

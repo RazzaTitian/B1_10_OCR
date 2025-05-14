@@ -1,4 +1,3 @@
-// app/scan/page.tsx
 'use client';
 import React from 'react';
 import { useSelected } from './layout';
