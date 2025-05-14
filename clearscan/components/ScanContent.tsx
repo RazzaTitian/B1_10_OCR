@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 interface ScanContentProps { selectedId: string; }
 
@@ -9,6 +9,47 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
   const [loading, setLoading] = useState<boolean>(false);
   const [audioUrl, setAudioUrl] = useState<string>('');
   const [error, setError] = useState<string>('');
+
+  const [useCamera, setUseCamera] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+  if (!useCamera) return;
+  navigator.mediaDevices
+    .getUserMedia({ video: { facingMode: 'environment' } })
+    .then(stream => {
+      /* … */
+    })
+    .catch((err: any) => {
+      if (err.name === 'NotAllowedError') {
+        setError('Camera access was denied');
+      } else if (err.name === 'NotFoundError') {
+        setError('No camera device found');
+      } else {
+        setError(`Camera error: ${err.message}`);
+      }
+      setUseCamera(false);
+    });
+}, [useCamera]);
+
+  const handleCapture = () => {
+    if (!videoRef.current || !canvasRef.current) return;
+    const v = videoRef.current;
+    const c = canvasRef.current;
+    c.width = v.videoWidth;
+    c.height = v.videoHeight;
+    const ctx = c.getContext('2d');
+    ctx?.drawImage(v, 0, 0);
+    c.toBlob((blob) => {
+      if (blob) {
+        const file = new File([blob], 'capture.jpg', { type: 'image/jpeg' });
+        setImage(file);
+        setResult('');
+        setAudioUrl('');
+      }
+    }, 'image/jpeg', 0.9);
+  };
 
   const OCR_ENDPOINT = process.env.NEXT_PUBLIC_OCR_ENDPOINT;
   const OCR_KEY = process.env.NEXT_PUBLIC_OCR_KEY;
@@ -114,14 +155,59 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
     <div>
       <h3 className="text-xl font-semibold mb-4 text-black">OCR & TTS for {selectedId}</h3>
 
-      {/* Gambar Upload */}
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleImageChange}
-        className="mb-4 p-2 bg-gray-200 text-black rounded cursor-pointer hover:bg-gray-300"
-        aria-label="Upload Image"
-      />
+      <div className="mb-4 flex space-x-2">
+        <button
+          onClick={() => setUseCamera(false)}
+          className={`px-4 py-2 border rounded ${
+            !useCamera ? 'bg-purple-600 text-white' : 'bg-white text-black'
+          }`}
+        >
+          Upload File
+        </button>
+        <button
+          onClick={() => setUseCamera(true)}
+          className={`px-4 py-2 border rounded ${
+            useCamera ? 'bg-purple-600 text-white' : 'bg-white text-black'
+          }`}
+        >
+          Use Camera
+        </button>
+      </div>
+
+      {useCamera ? (
+        <div className="mb-4">
+          <video ref={videoRef} className="w-full rounded-lg shadow" />
+          <div className="mt-2 flex space-x-2">
+            <button
+              onClick={handleCapture}
+              className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+            >
+              Capture
+            </button>
+            <button
+              onClick={() => setUseCamera(false)}
+              className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+            >
+              Cancel
+            </button>
+          </div>
+          <canvas ref={canvasRef} className="hidden" />
+        </div>
+      ) : (
+        // Upload picture
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handleImageChange}
+          className="
+            mb-4 p-2 bg-gray-200 text-black rounded cursor-pointer hover:bg-gray-300
+            file:border file:border-gray-300 file:rounded-md
+            file:px-4 file:py-2 file:bg-white file:text-gray-700
+            file:cursor-pointer hover:file:bg-gray-100
+          "
+          aria-label="Upload Image"
+        />
+      )}
       <button
         onClick={handleProcess}
         disabled={!image || loading}
