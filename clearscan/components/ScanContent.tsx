@@ -15,23 +15,40 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-  if (!useCamera) return;
-  navigator.mediaDevices
-    .getUserMedia({ video: { facingMode: 'environment' } })
-    .then(stream => {
-      /* … */
-    })
-    .catch((err: any) => {
-      if (err.name === 'NotAllowedError') {
-        setError('Camera access was denied');
-      } else if (err.name === 'NotFoundError') {
-        setError('No camera device found');
-      } else {
-        setError(`Camera error: ${err.message}`);
+    if (!useCamera) return;
+
+    const startCamera = async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: 'environment' },
+        });
+        if (videoRef.current) {
+          videoRef.current.srcObject = stream;
+          videoRef.current.play(); // Penting agar video muncul
+        }
+      } catch (err: any) {
+        if (err.name === 'NotAllowedError') {
+          setError('Camera access was denied');
+        } else if (err.name === 'NotFoundError') {
+          setError('No camera device found');
+        } else {
+          setError(`Camera error: ${err.message}`);
+        }
+        setUseCamera(false);
       }
-      setUseCamera(false);
-    });
-}, [useCamera]);
+    };
+
+    startCamera();
+
+    return () => {
+      // Hentikan kamera saat komponen dilepas atau toggle ke Upload
+      if (videoRef.current && videoRef.current.srcObject) {
+        const tracks = (videoRef.current.srcObject as MediaStream).getTracks();
+        tracks.forEach((track) => track.stop());
+        videoRef.current.srcObject = null;
+      }
+    };
+  }, [useCamera]);
 
   const handleCapture = () => {
     if (!videoRef.current || !canvasRef.current) return;
@@ -176,7 +193,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
 
       {useCamera ? (
         <div className="mb-4">
-          <video ref={videoRef} className="w-full rounded-lg shadow" />
+          <video ref={videoRef} className="w-full max-w-md rounded-lg shadow mx-auto" autoPlay playsInline />
           <div className="mt-2 flex space-x-2">
             <button
               onClick={handleCapture}
