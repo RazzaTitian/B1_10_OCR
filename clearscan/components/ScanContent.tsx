@@ -133,10 +133,10 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
     setLoading(true);
     setResult("");
 
-    const OCR_ENDPOINT = process.env.NEXT_PUBLIC_OCR_ENDPOINT!;
-    const OCR_KEY = process.env.NEXT_PUBLIC_OCR_KEY!;
-    const TTS_ENDPOINT = process.env.NEXT_PUBLIC_TTS_ENDPOINT!;
-    const TTS_KEY = process.env.NEXT_PUBLIC_TTS_KEY!;
+    const OCR_ENDPOINT = process.env.OCR_ENDPOINT!;
+    const OCR_KEY = process.env.OCR_KEY!;
+    const TTS_ENDPOINT = process.env.TTS_ENDPOINT!;
+    const TTS_KEY = process.env.TTS_KEY!;
 
     try {
       const ocrResponse = await fetch(

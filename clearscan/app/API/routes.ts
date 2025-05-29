@@ -1,4 +1,4 @@
-const mainRoute = process.env.NEXT_PUBLIC_API_URL;
+const mainRoute = process.env.API_URL;
 
 //users
 const usersRoute = `${mainRoute}/api/users`;
