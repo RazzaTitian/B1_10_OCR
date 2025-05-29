@@ -26,16 +26,16 @@ export default function LoginPage() {
       try {
         const response = await axios.post(apiRoutes.users.login, {
           email,
-          password
+          password,
         });
 
         if (response.status === 200) {
           // Store the token in localStorage
-          localStorage.setItem('token', response.data.token);
-          
+          localStorage.setItem("token", response.data.data.token);
+          localStorage.setItem("userId", response.data.data.user.id);
           // Show success message briefly
           setSuccess("Login successful!");
-          
+
           // Redirect to scan page
           setTimeout(() => {
             router.push("/scan");
@@ -69,7 +69,7 @@ export default function LoginPage() {
         const response = await axios.post(apiRoutes.users.register, {
           name,
           email,
-          password
+          password,
         });
 
         if (response.status === 201 || response.status === 200) {

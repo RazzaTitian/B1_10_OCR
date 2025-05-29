@@ -2,6 +2,7 @@ const mainRoute = process.env.NEXT_PUBLIC_API_URL;
 
 //users
 const usersRoute = `${mainRoute}/api/users`;
+const historyRoute = `${mainRoute}/api/history`;
 
 
 export const apiRoutes = {
@@ -11,4 +12,9 @@ export const apiRoutes = {
     register: `${usersRoute}/register`,
     login: `${usersRoute}/login`,
   },
+  history: {
+    main: historyRoute,
+    getbyid: (id: string) => `${historyRoute}/${id}`,
+    add: `${historyRoute}/add`
+  }
 };
