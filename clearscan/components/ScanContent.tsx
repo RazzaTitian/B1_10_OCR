@@ -13,6 +13,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
   const { userId } = useAuth();
   const [image, setImage] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [result, setResult] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
@@ -28,6 +29,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
       if (selectedHistory) {
         setPreviewUrl(selectedHistory.photoUrl);
         setResult(selectedHistory.extractedText);
+        setAudioUrl(null);
         setImage(null); // Clear any uploaded image
         setUseCamera(false); // Disable camera mode
       }
@@ -35,6 +37,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
       // Reset state when no history is selected
       setPreviewUrl(null);
       setResult("");
+      setAudioUrl(null);
     }
   }, [selectedId, histories]);
 
@@ -200,7 +203,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
 
       const audioBlob = await ttsResponse.blob();
       const audioUrl = URL.createObjectURL(audioBlob);
-      setPreviewUrl(audioUrl);
+      setAudioUrl(audioUrl);
 
       const formData = new FormData();
       formData.append("userId", userId);
@@ -273,7 +276,11 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
           {selectedHistory?.audioUrl && (
             <div className="mb-6">
               <h4 className="text-lg font-semibold text-black mb-2">Audio:</h4>
-              <audio controls className="w-full">
+              <audio
+                controls
+                className="w-full"
+                key={selectedHistory.audioUrl} // Tambahkan key unik
+              >
                 <source src={selectedHistory.audioUrl} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
