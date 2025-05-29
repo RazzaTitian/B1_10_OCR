@@ -242,7 +242,7 @@ export default function ScanContent({ selectedId }: ScanContentProps) {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4 bg-gray-100 rounded-lg shadow">
+     <div className="w-full bg-gray-100 rounded-lg shadow">
       {selectedId ? (
         // History View
         <>
